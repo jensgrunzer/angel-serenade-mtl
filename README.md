@@ -15,17 +15,18 @@ MTL of *Angelic Serenade* using Gemini 4 Hydrogen. If you have access to a bette
 
 ### Workflow
 1. Obtain [r2395](https://vndb.org/r2395) from a trusted source of your choice.
-2. Open `Script.pak` in **GARbro** and extract all `.Wps` files into `<game_dir>\Script\`.
-3. Place `wps_tool.py` in `<game_dir>`, then extract and gather everything into `ALL_SCRIPTS.json`:
+2. Edit the game path inside wps_tool.py accordingly.
+3. Open `Script.pak` in **GARbro** and extract all `.Wps` files into `<game_dir>\Script\`.
+4. Place `wps_tool.py` in `<game_dir>`, then extract and gather everything into `ALL_SCRIPTS.json`:
    ```powershell
    py wps_tool.py -xg
    ```
-4. Translate `ALL_SCRIPTS.json` (manually or with an LLM), QC it without packing, then split and build `Script.pak`:
+5. Translate `ALL_SCRIPTS.json` (manually or with an LLM), QC it without packing, then split and build `Script.pak`:
    ```powershell
    py wps_tool.py -q ALL_SCRIPTS.json
    py wps_tool.py -sb
    ```
-5. Lastly you'll have to patch the name input field (otherwise the OK button will be greyed out):
+6. Lastly you'll have to patch the name input field (otherwise the OK button will be greyed out):
       ```powershell
    py patch_name_entry.py
    ```
