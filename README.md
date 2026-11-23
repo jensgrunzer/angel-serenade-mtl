@@ -1,5 +1,5 @@
 # angel-serenade-mtl
-MTL of *Angelic Serenade* using Gemini 4 Hydrogen. If you have access to a better model or know Japanese, feel free to improve this translation.
+MTL of *Angelic Serenade* using Gemini 4 Hydrogen without sliding context window or dictonary as the entire script as json(~600k tokens) easily fits into the 1m tokens context window of gemini 4 hydrogen. The entire script was translated in one go to the token optimized format (see below) leveraging the [long decode](https://aistudio.google.com/docs/long-decode) feature. If you have access to a better model or know Japanese, feel free to improve this translation.
 
 ### Installation
 Just download the zip from the most recent release, extract its contents into your game folder and overwrite if prompted.
