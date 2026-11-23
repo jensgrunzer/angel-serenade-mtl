@@ -1,6 +1,10 @@
 # angel-serenade-mtl
 MTL of *Angelic Serenade* using Gemini 4 Hydrogen. If you have access to a better model or know Japanese, feel free to improve this translation.
 
+### Installation
+Just download the zip from the most recent release, extract its contents into your game folder and overwrite if prompted.
+
+## Translation
 `wps_tool.py` supports combinable `tar`-style flags (e.g., `-xg`, `-sqb`, `-isb`). Flags always execute in logical pipeline order regardless of the order you type them.
 
 ### Flag Reference
